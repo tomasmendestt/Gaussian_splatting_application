@@ -29,8 +29,8 @@ The complete reconstruction workflow consists of:
 
 The optimizer uses PyTorch and CUDA extensions in a Python environment to produce trained models.
 
- Software Requirements
--------------------
+ ****Software Requirements****
+
 - Conda (recommended for easy setup)
 - C++ Compiler for PyTorch extensions (we used Visual Studio 2019 for Windows)
 - CUDA SDK 11 for PyTorch extensions, install after Visual Studio (we used 11.8)
