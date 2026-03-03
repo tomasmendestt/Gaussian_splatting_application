@@ -34,24 +34,17 @@ data/crane/input_video.mp4
 
 The frames should then be extracted inside the 'data/crane/' folder.
 
-Exemple:
+Run:
 
 ```bash
-ffmpeg -i input_video.mp4 -qscale:v 1 -qmin 1 -vf fps=3 frames/%04d.jpg
-Images must:
+python extract_frames.py -i scene_name/data/crane/input_video.mp4 --fps 3
 ```
 
 **Note: You should adjust fps in order to have arround 200-300 frames per video**
-
-The images need to:
-- Have sufficient overlap between frames
-- Contain textured regions
-- Be captured with camera motion (not rotating the object with a fixed camera)
-- Maintain consistent exposure if possible
-
+All images will then be saved inside 'scene_name/data/crane'
 Recommended:
 
-- images for small objects
+- images must be captured with camera motion (not rotating the object with a fixed camera)
 - Larger datasets increase processing time significantly
 - save all images inside a folder and call it '/input'
 ---
@@ -63,6 +56,7 @@ Camera poses and sparse geometry are estimated using COLMAP.
 Typical output:
 
 sparse/0/
+
     cameras.bin
     images.bin
     points3D.bin
