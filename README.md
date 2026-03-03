@@ -1,6 +1,6 @@
 # 3D Gaussian Splatting - Image-Based Scene Reconstruction
 
-##Overview
+## Overview
 
 This project implements a full pipeline for **3D  scene reconstruction using 3D Gaussian Splatting**
 The gold is to reconstruct a real-world scene from videos sequences by extracting frames, estimating camera poses using Structure-from-Motion, and rendering the result in real time using an explicit 3D Gaussian representation.
