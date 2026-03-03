@@ -47,27 +47,23 @@ Before starting, open:
 
 This ensures that the correct MSVC compiler and build tools are available for CUDA and PyTorch extensions.
 
-You can find it in:
-
-Start Menu → Visual Studio → x64 Native Tools Command Prompt
-
 ---
 
-### 1️. Clone the Repository
+## 1️. Clone the Repository
 
 ```bash
 git clone https://github.com/tomasmendestt/Gaussian_splatting_application --recursive
 cd gaussian-splatting
 ```
 
-### 2. Create the Conda Environment
+## 2. Create the Conda Environment
 
 ```bash
 conda env create --file environment.yml
 conda activate gaussian_splatting
 ```
 
-### 3. Install the submodules
+## 3. Install the submodules
 
 ```bash
 conda install -y -c conda-forge vs2015_runtime vc14_runtime
