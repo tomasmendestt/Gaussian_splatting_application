@@ -109,11 +109,18 @@ Camera poses and sparse geometry are estimated using COLMAP.
 
 Typical output:
 
-sparse/0/
-   cameras.bin
-   images.bin
-   points3D.bin
-
+```bash
+<location>
+|---input
+|   |---<image 0>
+|   |---<image 1>
+|   |---...
+|---sparse
+    |---0
+        |---cameras.bin
+        |---images.bin
+        |---points3D.bin
+```
 ---
 
 ## 3️ Dataset Conversion
@@ -128,8 +135,8 @@ This script:
   - Reads COLMAP binary files
   - Converts coordinate systems to OpenGL convention
   - Normalizes scene scale and center
-  -Initializes Gaussians from sparse 3D points
-  -Generates structured dataset files
+  - Initializes Gaussians from sparse 3D points
+  - Generates structured dataset files
 
 
 ## 4 Training
@@ -141,18 +148,19 @@ python train.py -s path/to/dataset
 ```
 
 During trainig:
-
--Each sparse point is initialized as a 3D Gaussian
--Gaussian parameters are optimized
--Loss is computed between rendered and ground-truth images
+ - Each sparse point is initialized as a 3D Gaussian
+ - Gaussian parameters are optimized
+ - Loss is computed between rendered and ground-truth images
 
 The output structure must be:
 
-output/
-    scene_name/
-       interaction_XXXX/
-             point_cloud.ply
-
+```bash
+<location>
+|---output/
+|   |---scene_name/
+|   |   |---interaction_XXXX/
+|   |   |   |---point_cloud.ply
+```
 
 ## 5 Visualization
 
