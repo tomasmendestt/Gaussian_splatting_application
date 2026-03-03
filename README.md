@@ -73,7 +73,7 @@ conda install -y -c pytorch pytorch=1.12.1 torchvision=0.13.1 torchaudio=0.12.1 
 
 Check with:
 ```bash
-python -c "import torch;print(torch.__version__)"
+python -c "import torch; print(torch.__version__)"
 ```
 
 If everything runs without a problem you can install the submodules one by one:
