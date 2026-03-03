@@ -56,12 +56,9 @@ Camera poses and sparse geometry are estimated using COLMAP.
 Typical output:
 
 sparse/0/
-
-cameras.bin
-    
-images.bin
-    
-points3D.bin
+   cameras.bin
+   images.bin
+   points3D.bin
 
 ---
 
