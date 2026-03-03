@@ -125,7 +125,7 @@ python convert.py -s path/to/dataset
 ```
 
 This script:
-  -Reads COLMAP binary files
+  /n -Reads COLMAP binary files
   -Converts coordinate systems to OpenGL convention
   -Normalizes scene scale and center
   -Initializes Gaussians from sparse 3D points
