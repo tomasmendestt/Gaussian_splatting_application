@@ -43,6 +43,7 @@ Images must:
 
 **Note: You should adjust fps in order to have arround 200-300 frames per video**
 
+The images need to:
 - Have sufficient overlap between frames
 - Contain textured regions
 - Be captured with camera motion (not rotating the object with a fixed camera)
@@ -52,7 +53,7 @@ Recommended:
 
 - images for small objects
 - Larger datasets increase processing time significantly
-
+- save all images inside a folder and call it '/input'
 ---
 
 ## 2️ Structure-from-Motion (COLMAP)
@@ -82,3 +83,36 @@ This script:
   -Normalizes scene scale and center
   -Initializes Gaussians from sparse 3D points
   -Generates structured dataset files
+
+
+## 4 Training
+
+Run:
+
+```bash
+python train.py -s path/to/dataset
+```
+
+During trainig:
+
+-Each sparse point is initialized as a 3D Gaussian
+-Gaussian parameters are optimized
+-Loss is computed between rendered and ground-truth images
+
+The output structure must be:
+
+output/
+    scene_name/
+       interaction_XXXX/
+             point_cloud.ply
+
+
+## 5 Visualization
+
+Run:
+
+```bash
+python gs_viewer.py -m output/scene_name/interaction_XXX
+```
+
+The viewer loads optimized 3D Gaussians, uses GPU rasterization, renders in real time and allow free camera navigation
