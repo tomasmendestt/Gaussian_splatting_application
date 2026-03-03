@@ -44,9 +44,9 @@ python extract_frames.py -i scene_name/data/crane/input_video.mp4 --fps 3
 All images will then be saved inside 'scene_name/data/crane'
 Recommended:
 
-_ images must be captured with camera motion (not rotating the object with a fixed camera)
-_ Larger datasets increase processing time significantly
-_ save all images inside a folder and call it '/input'
+ Images must be captured with camera motion (not rotating the object with a fixed camera)
+ Larger datasets increase processing time significantly
+ Save all images inside a folder and call it '/input'
 ---
 
 ## 2️ Structure-from-Motion (COLMAP)
@@ -57,9 +57,11 @@ Typical output:
 
 sparse/0/
 
-    cameras.bin
-    images.bin
-    points3D.bin
+cameras.bin
+    
+images.bin
+    
+points3D.bin
 
 ---
 
