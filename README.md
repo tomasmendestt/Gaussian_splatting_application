@@ -1,4 +1,4 @@
-# 3D Gaussian Splatting - Image-Based Scene Reconstruction
+# 3D Gaussian Splatting for Real-Time Scene Reconstruction
 
 ## Overview
 
