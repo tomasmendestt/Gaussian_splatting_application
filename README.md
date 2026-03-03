@@ -29,7 +29,7 @@ The complete reconstruction workflow consists of:
 
 ### Local Setup (Windows – x64)
 
-⚠️ Before starting, open:
+Before starting, open:
 
 **"x64 Native Tools Command Prompt for Visual Studio"**
 
