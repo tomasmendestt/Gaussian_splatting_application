@@ -37,9 +37,9 @@ The optimizer uses PyTorch and CUDA extensions in a Python environment to produc
 - C++ Compiler and CUDA SDK must be compatible
 
 
-## Setup
+****Setup****
 
-### Local Setup (Windows – x64)
+*Local Setup (Windows – x64)*
 
 Before starting, open:
 
