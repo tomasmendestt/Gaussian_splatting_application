@@ -2,8 +2,11 @@ import argparse
 import os
 import subprocess
 import sys
+import os
 
-DEFAULT_VIEWER = r"D:\Gaussian_splatting\gaussian_splatting_Tomas_1\viewers\bin\SIBR_gaussianViewer_app.exe"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_VIEWER = os.path.join(SCRIPT_DIR, "..", "viewers", "bin", "SIBR_gaussianViewer_app.exe")
+DEFAULT_VIEWER = os.path.abspath(DEFAULT_VIEWER)
 
 def find_model_root(path: str) -> str:
     """
