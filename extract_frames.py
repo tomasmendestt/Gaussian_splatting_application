@@ -4,18 +4,18 @@ import subprocess
 import sys
 
 def main():
-    parser = argparse.ArgumentParser(description="Extrair frames de vídeo usando FFmpeg")
+    parser = argparse.ArgumentParser(description="Extract video frames using FFmpeg")
     
-    parser.add_argument("-i", "--input", required=True, help="Caminho para o vídeo")
-    parser.add_argument("-o", "--output", default="frames", help="Pasta de saída")
-    parser.add_argument("--fps", type=int, required=True, help="FPS desejado")
-    parser.add_argument("--qscale", type=int, default=1, help="Qualidade JPEG (1 = máxima)")
-    parser.add_argument("--ffmpeg", default="ffmpeg", help="Path do ffmpeg.exe se não estiver no PATH")
+    parser.add_argument("-i", "--input", required=True, help="Video path")
+    parser.add_argument("-o", "--output", default="frames", help="Output folder")
+    parser.add_argument("--fps", type=int, required=True, help="Desired FPS")
+    parser.add_argument("--qscale", type=int, default=1, help="JPEG quality (1 = maximum)")
+    parser.add_argument("--ffmpeg", default="ffmpeg", help="Path to ffmpeg.exe if not in PATH")
 
     args = parser.parse_args()
 
     if not os.path.isfile(args.input):
-        print("[ERRO] Vídeo não encontrado.")
+        print("[ERROR] Video not found.")
         sys.exit(1)
 
     os.makedirs(args.output, exist_ok=True)
@@ -31,7 +31,7 @@ def main():
         output_pattern
     ]
 
-    print("Executando comando:")
+    print("Executing command:")
     print(" ".join(cmd))
 
     subprocess.run(cmd)
