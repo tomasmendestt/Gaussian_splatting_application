@@ -17,7 +17,7 @@ This approach enables high-quality novel view synthesis with real-time rendering
 
 The complete reconstruction workflow consists of:
 
-1. Image Acquisition  
+1. Image Acquisition (`extract_frames.py`)  
 2. Structure-from-Motion (COLMAP)  
 3. Dataset Conversion (`convert.py`)  
 4. Gaussian Optimization (`train.py`)  
