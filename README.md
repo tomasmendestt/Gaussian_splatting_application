@@ -6,7 +6,8 @@ This project implements a full pipeline for **3D  scene reconstruction using 3D 
 The gold is to reconstruct a real-world scene from videos sequences by extracting frames, estimating camera poses using Structure-from-Motion, and rendering the result in real time using an explicit 3D Gaussian representation.
 The implementation follows the method introduced in:
 
-**3D Gaussian Splatting (Inria, 2023)**
+**3D Gaussian Splatting (Inria, 2023)** 
+Repository: https://github.com/graphdeco-inria/gaussian-splatting
 
 This approach enables high-quality novel view synthesis with real-time rendering performance.
 
@@ -47,9 +48,9 @@ Camera poses and sparse geometry are estimated using COLMAP.
 Typical output:
 
 sparse/0/
-    /cameras.bin
-    /images.bin
-    /points3D.bin
+    cameras.bin
+    images.bin
+    points3D.bin
 
 ---
 
