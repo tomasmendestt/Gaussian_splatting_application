@@ -51,6 +51,8 @@ This ensures that the correct MSVC compiler and build tools are available for CU
 
 ## Clone the Repository
 
+Run:
+
 ```bash
 git clone https://github.com/tomasmendestt/Gaussian_splatting_application --recursive
 cd gaussian-splatting
@@ -58,12 +60,16 @@ cd gaussian-splatting
 
 ## Create the Conda Environment
 
+Run:
+
 ```bash
 conda env create --file environment.yml
 conda activate gaussian_splatting
 ```
 
 ## Install the submodules
+
+Run:
 
 ```bash
 conda install -y -c conda-forge vs2015_runtime vc14_runtime
