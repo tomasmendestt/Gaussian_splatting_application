@@ -124,6 +124,8 @@ Two acquisition strategies were used depending on the target:
 <p align="center">
   <img src="assets/object.gif" width="45%" />
   <img src="assets/scene.gif" width="45%" />
+
+  Video acquisitions exemples.
 </p>
 
 ---
