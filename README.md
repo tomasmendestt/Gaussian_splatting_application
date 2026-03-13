@@ -185,6 +185,7 @@ Run:
 ```bash
 python convert.py -s path/to/dataset
 ```
+---
 
 ## 4. Gaussian Splatting Training
 
@@ -205,6 +206,7 @@ The output structure must be:
         |---interaction_XXXX/
             |---point_cloud.ply
 ```
+---
 
 ## 5. Visualization
 
@@ -217,6 +219,7 @@ python gs_viewer.py -m output/scene_name/interaction_XXX
 
 The viewer loads optimized 3D Gaussians, uses GPU rasterization, renders in real time and allow free camera navigation
 
+---
 
 ## RESULTS
 
@@ -231,3 +234,16 @@ The final output consists of a trained Gaussian model that can be rendered inter
 <p align="center">
   Gaussian Splatting results.
 </p>
+
+---
+
+## NOTES
+
+Reconstruction quality depends heavily on acquisition quality.
+The following factors my negatively affect results:
+
+- motion blur
+- poor lighting
+- reflective surfaces
+- low-texture areas
+
