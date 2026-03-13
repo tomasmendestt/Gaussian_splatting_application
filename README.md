@@ -126,7 +126,7 @@ Two acquisition strategies were used depending on the target:
   <img src="assets/scene.gif" width="45%" />
 </p>
 <p align="center">
-  Video acquisitions exemples.
+  ZED acquisitions examples.
 </p>
 
 ---
@@ -188,16 +188,13 @@ python convert.py -s path/to/dataset
 
 ## 4. Gaussian Splatting Training
 
-Run:
+The prepared dataset is used to traibn the Gaussian Splatting model.
+The training process optimizes a set of 3D Gaussians that represent the geometry and appearance of the scene.
+Training is executed using the following command:
 
 ```bash
 python train.py -s path/to/dataset
 ```
-
-During trainig:
- - Each sparse point is initialized as a 3D Gaussian
- - Gaussian parameters are optimized
- - Loss is computed between rendered and ground-truth images
 
 The output structure must be:
 
@@ -211,6 +208,7 @@ The output structure must be:
 
 ## 5. Visualization
 
+After training, the reconstructed scene can be visualized using SIBR viewer.
 Run:
 
 ```bash
@@ -218,3 +216,18 @@ python gs_viewer.py -m output/scene_name/interaction_XXX
 ```
 
 The viewer loads optimized 3D Gaussians, uses GPU rasterization, renders in real time and allow free camera navigation
+
+
+## RESULTS
+
+The pipeline produces a real-time 3D representation of captured scene.
+The final output consists of a trained Gaussian model that can be rendered interactively using the viewer.
+
+
+<p align="center">
+  <img src="assets/model1.gif" width="45%" />
+  <img src="assets/model2.gif" width="45%" />
+</p>
+<p align="center">
+  Gaussian Splatting results.
+</p>
