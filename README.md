@@ -123,7 +123,7 @@ Two acquisition strategies were used depending on the target:
 - **Scene acquisition:** the camera was carried through the environment while maintaining continuous motion and covering the visible geometry.
 
 <p align="center">
-  <img src="assents/object.gif" width="500">
+  <img src="assets/object.gif" width="500">
   <br>
   <em>Video acquisition of an object.</em>
 </p>
