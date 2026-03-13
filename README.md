@@ -240,6 +240,7 @@ The final output consists of a trained Gaussian model that can be rendered inter
 ## NOTES
 
 Reconstruction quality depends heavily on acquisition quality.
+
 The following factors my negatively affect results:
 
 - motion blur
