@@ -122,7 +122,11 @@ Two acquisition strategies were used depending on the target:
 - **Object acquisition:** the camera was moved around the object to capture it from multiple viewpoints.
 - **Scene acquisition:** the camera was carried through the environment while maintaining continuous motion and covering the visible geometry.
 
-![Demo](assets/object.gif)
+<p align="center">
+  <img src="assents/object.gif" width="500">
+  <br>
+  <em>Video acquisition of an object.</em>
+</p>
 
 ### Acquisition Guidelines
 
