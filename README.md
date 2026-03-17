@@ -195,11 +195,18 @@ This output is REQUIRED for the training step, as it provides:
 
 The training script directly reads this data from the `sparse/0` folder.
 
-To perform the SfM run:
+Run:
 
 ```bash
 python convert.py -s path/to/dataset
 ```
+
+This cript internally runs the COLMAP SfM pipeline, including:
+
+- Feature extraction
+- Feature matching
+- Sparse reconstruction (mapping)
+
 ---
 
 ## 4. Gaussian Splatting Training
