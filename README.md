@@ -138,8 +138,10 @@ Two acquisition strategies were used depending on the target:
 <p align="center">
   ZED acquisitions examples.
 </p>
+ 
 
 ---
+
 
 ## 2. Frame Extraction
 
