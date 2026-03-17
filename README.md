@@ -28,7 +28,7 @@ The complete reconstruction workflow consists of:
 ### Pipeline diagram
 
 <p align="center">
-  <img src="assets/Diagrama em Branco.png"/>
+  <img src="assets/diagram.png"/>
 </p>
 ---
 
