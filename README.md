@@ -3,7 +3,7 @@
 ## Overview
 
 This project implements a full pipeline for **3D  scene reconstruction using 3D Gaussian Splatting**
-The gold is to reconstruct a real-world scene from videos sequences by extracting frames, estimating camera poses using Structure-from-Motion, and rendering the result in real time using an explicit 3D Gaussian representation.
+The goald is to reconstruct a real-world scene from videos sequences by extracting frames, estimating camera poses using Structure-from-Motion, and rendering the result in real time using an explicit 3D Gaussian representation.
 The implementation follows the method introduced in:
 
 **3D Gaussian Splatting (Inria, 2023)** 
@@ -16,7 +16,7 @@ This approach enables high-quality novel view synthesis with real-time rendering
 
 ## Project Pipeline
 
-The proposed workflow converts raw data acquired with a ZED camera into a real-tima 3D representation using Gaussian Splatting.
+The proposed workflow converts raw data acquired with a ZED camera into a real-time 3D representation using Gaussian Splatting.
 The complete reconstruction workflow consists of:
 
 1. ZED Acquisition (`importpyzed.py`) 
@@ -167,26 +167,35 @@ If the frame mode was used during acquisition, this step is not necessary since 
 ## 3. Camera Pose Estimation 
 
 Camera poses and sparse geometry are estimated using a Structure-from-Motion (SfM) approach.
+They are obtained using COLMAP.
 This step determines the position and orientation of each camera frame and generates a sparse point cloud of the scene.
 
-Typical output:
+Each scene must follow this structure:
 
-```bash
-<location>
-|---input
-|   |---<image 0>
-|   |---<image 1>
-|   |---...
-|---sparse
-    |---0
-        |---cameras.bin
-        |---images.bin
-        |---points3D.bin
-```
+'''bash
+<scene_name>/
+│
+├── input/
+│   ├── 0001.png
+│   ├── 0002.png
+│
+├── sparse/
+│   └── 0/
+│       ├── cameras.bin
+│       ├── images.bin
+│       ├── points3D.bin
+'''
 
-This outputs are required for training the Gaussian Splatting model.
+This outputs are required for training the Gaussian Splatting model. It is a COLMAP-compatible sparse reconstruction.
 
-Run:
+This output is REQUIRED for the training step, as it provides:
+- Camera poses (extrinsics)
+- Camera intrinsics
+- Sparse 3D structure
+
+The training script directly reads this data from the `sparse/0` folder.
+
+To perform the SfM run:
 
 ```bash
 python convert.py -s path/to/dataset
