@@ -31,6 +31,7 @@ The complete reconstruction workflow consists of:
 <p align="center">
   Pipeline Diagram.
 </p>
+
 ---
 
 ## Requirements
