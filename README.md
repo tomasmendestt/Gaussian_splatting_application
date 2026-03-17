@@ -172,7 +172,7 @@ This step determines the position and orientation of each camera frame and gener
 
 Each scene must follow this structure:
 
-'''bash
+```bash
 <scene_name>/
 │
 ├── input/
@@ -184,7 +184,7 @@ Each scene must follow this structure:
 │       ├── cameras.bin
 │       ├── images.bin
 │       ├── points3D.bin
-'''
+```
 
 This outputs are required for training the Gaussian Splatting model. It is a COLMAP-compatible sparse reconstruction.
 
