@@ -274,27 +274,45 @@ The final output consists of a trained Gaussian model that can be rendered inter
 
 ---
 
-
 ## Common Issues
 
-- Poor reconstruction:
-  → Ensure sufficient overlap between frames
+- Poor reconstruction  
+  → Ensure sufficient overlap between frames and proper scene coverage
 
-- Blurry results:
-  → Avoid fast camera motion
+- Blurry results  
+  → Avoid fast camera motion and ensure stable capture
 
-- Training crashes:
+- Training crashes  
   → Check GPU memory and CUDA compatibility
 
+___
 
-## NOTES
+## Acquisition Guidelines
 
-Reconstruction quality depends heavily on acquisition quality.
+Reconstruction quality strongly depends on the quality of the captured data.
 
-The following factors my negatively affect results:
+To obtain good results:
 
-- motion blur
-- poor lighting
-- reflective surfaces
-- low-texture areas
+- Avoid motion blur
+- Ensure good lighting conditions
+- Avoid reflective or transparent surfaces
+- Capture scenes with sufficient texture
 
+Gaussian Splatting performs best on small to medium-scale scenes.
+While it can be applied to larger environments such as rooms, the reconstruction quality depends heavily on acquisition quality and scene characteristics.
+
+When capturing room-scale environments, additional care must be taken during acquisition:
+
+- Follow a structured camera trajectory instead of random motion  
+- Move along the perimeter of the room before covering the interior  
+- Ensure high overlap between frames (≥ 70%)  
+- Move the camera slowly and maintain smooth, continuous motion  
+- Avoid abrupt rotations or sudden changes in direction  
+- Capture the scene from multiple viewpoints, including slight up/down variations  
+- Ensure all areas of the room are observed multiple times  
+- Try to end the capture near the starting point (loop closure) to reduce drift  
+
+Larger environments may introduce additional challenges such as increased memory usage and reduced reconstruction stability, especially in areas with low texture or incomplete coverage.
+___
+
+****This pipeline transforms raw RGB data into a real-time 3D representation by combining classical SfM (COLMAP) with differentiable rendering using 3D Gaussian Splatting.****
