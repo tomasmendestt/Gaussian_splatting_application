@@ -25,11 +25,12 @@ The complete reconstruction workflow consists of:
 4. Gaussian Splatting Training (`train.py`)  
 5. Visualization (`gs_viewer.py`)  
 
-### Pipeline diagram
+### Pipeline Diagram
 
 <p align="center">
-  <img src="assets/diagram.png"/>
+  <img src="assets/diagram.png" width="500"/>
 </p>
+
 ---
 
 ## Optimizer
