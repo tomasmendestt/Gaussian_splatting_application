@@ -33,16 +33,20 @@ The complete reconstruction workflow consists of:
 
 ---
 
-## Optimizer
+## Requirements
 
-The optimizer uses PyTorch and CUDA extensions in a Python environment to produce trained models.
+****System Requirements****
 
- ****Software Requirements****
+- Conda (recommended for environment management)
+- C++ Compiler for PyTorch extensions (Visual Studio 2019 on Windows)
+- CUDA SDK 11 (we used 11.8)
+- Compatible C++ compiler and CUDA version
 
-- Conda (recommended for easy setup)
-- C++ Compiler for PyTorch extensions (we used Visual Studio 2019 for Windows)
-- CUDA SDK 11 for PyTorch extensions, install after Visual Studio (we used 11.8)
-- C++ Compiler and CUDA SDK must be compatible
+****External Dependencies****
+
+- **COLMAP** – required for Structure-from-Motion (camera pose estimation and sparse reconstruction)
+- **PyTorch** – used for training the Gaussian Splatting model
+- **CUDA** – required for GPU acceleration
 
 
 ****Setup****
@@ -269,6 +273,19 @@ The final output consists of a trained Gaussian model that can be rendered inter
 </p>
 
 ---
+
+
+## Common Issues
+
+- Poor reconstruction:
+  → Ensure sufficient overlap between frames
+
+- Blurry results:
+  → Avoid fast camera motion
+
+- Training crashes:
+  → Check GPU memory and CUDA compatibility
+
 
 ## NOTES
 
