@@ -216,10 +216,11 @@ The output structure must be:
 
 ```bash
 <location>
-|---output/
-    |---scene_name/
-        |---interaction_XXXX/
-            |---point_cloud.ply
+|
+└── output/
+     └── scene_name/
+        └── interaction_XXXX/
+            └── point_cloud.ply
 ```
 ---
 
