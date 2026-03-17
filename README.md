@@ -235,10 +235,10 @@ The output structure must be:
 │     └── scene_name/
 │         │
 │         ├── point_cloud/
-│         │      ├── interation_7000
+│         │      ├── interation_7000/
 │         │      │   └── point_cloud.ply
 │         │      │
-│         │      ├── interation_30000
+│         │      ├── interation_30000/
 │         │          └── point_cloud.ply
 │         │
 │         ├── cameras.json
