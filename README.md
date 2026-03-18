@@ -308,7 +308,7 @@ When capturing room-scale environments, additional care must be taken during acq
 
 - Follow a structured camera trajectory instead of random motion  
 - Move along the perimeter of the room before covering the interior  
-- Ensure high overlap between frames (≥ 70%)  
+- Ensure high overlap between frames 
 - Move the camera slowly and maintain smooth, continuous motion  
 - Avoid abrupt rotations or sudden changes in direction  
 - Capture the scene from multiple viewpoints, including slight up/down variations  
