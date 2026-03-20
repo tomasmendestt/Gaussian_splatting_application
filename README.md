@@ -26,9 +26,9 @@ The complete reconstruction workflow consists of:
 4. Gaussian Splatting Training (`train.py`)  
 5. Visualization (`gs_viewer.py`)  
 
-OR if using an ipad:
+OR if using an iPad:
 
-1. Ipad Acquisition
+1. IPad Acquisition
 2. Frame Extraction (`extract_frames.py`)  
 3. Camera Pose Estimation (`convert.py`)  
 4. Gaussian Splatting Training (`train.py`)  
@@ -150,7 +150,7 @@ Two acquisition strategies were used depending on the target:
   ZED acquisitions examples.
 </p>
 
-****Ipad acquisition****
+****IPad acquisition****
 
 If an iPad is used, we recommend following the same acquisition strategy adopted for the ZED stereo camera.  
 During capture, the device should be moved smoothly around the scene while maintaining stable motion and ensuring good visibility of the scene geometry.
@@ -162,7 +162,7 @@ The recorded video can be exported in .MOV format and must then be converted int
   <img src="assets/scene.gif" width="45%" />
 </p>
 <p align="center">
-  Ipad Pro acquisitions examples.
+  IPad Pro acquisitions examples.
 </p>
 
 ---
