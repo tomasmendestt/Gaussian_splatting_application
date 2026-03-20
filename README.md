@@ -9,7 +9,7 @@ The implementation follows the method introduced in:
 **3D Gaussian Splatting (Inria, 2023)** 
 Repository: https://github.com/graphdeco-inria/gaussian-splatting
 
-The data is acquired using a ZED stereo camera and processed through saveral stages including frame extraction, camera pose estimation, model training and visualization.
+The data is acquired using a ZED stereo camera or an ipad pro with 4k resolution. Then it is processed through saveral stages including frame extraction, camera pose estimation, model training and visualization.
 This approach enables high-quality novel view synthesis with real-time rendering performance.
 
 ---
@@ -19,11 +19,20 @@ This approach enables high-quality novel view synthesis with real-time rendering
 The proposed workflow converts raw data acquired with a ZED camera into a real-time 3D representation using Gaussian Splatting.
 The complete reconstruction workflow consists of:
 
-1. ZED Acquisition (`importpyzed.py`) 
+1. ZED Acquisition (`importpyzed.py`)
 2. Frame Extraction (`extract_frames.py`)  
 3. Camera Pose Estimation (`convert.py`)  
 4. Gaussian Splatting Training (`train.py`)  
 5. Visualization (`gs_viewer.py`)  
+
+OR if using an ipad:
+
+1. Ipad Acquisition
+2. Frame Extraction (`extract_frames.py`)  
+3. Camera Pose Estimation (`convert.py`)  
+4. Gaussian Splatting Training (`train.py`)  
+5. Visualization (`gs_viewer.py`)
+
 
 <p align="center">
   <img src="assets/diagram.png" width="500"/>
@@ -139,8 +148,13 @@ Two acquisition strategies were used depending on the target:
 <p align="center">
   ZED acquisitions examples.
 </p>
- 
 
+**** Ipad acquisition ****
+
+If you're using an Ipad we recomend the same acquisition strategues used with the Zed Stereo camera.
+During acquisition, the Ipad was moved smoothly around the target scene while maintaining stable motion and good visibility of the scene structure.
+
+The video can be exported in .MOV type and then it must be converted into individual frames as the next step will teach.
 ---
 
 
