@@ -296,7 +296,15 @@ The final output consists of a trained Gaussian model that can be rendered inter
   <img src="assets/model2.gif" width="45%" />
 </p>
 <p align="center">
-  Gaussian Splatting results.
+  Gaussian Splatting results using ZED camera.
+</p>
+
+<p align="center">
+  <img src="assets/model1.gif" width="45%" />
+  <img src="assets/model2.gif" width="45%" />
+</p>
+<p align="center">
+  Gaussian Splatting results using Ipad Pro.
 </p>
 
 ---
