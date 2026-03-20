@@ -9,9 +9,9 @@ The implementation follows the method introduced in:
 **3D Gaussian Splatting (Inria, 2023)** 
 Repository: https://github.com/graphdeco-inria/gaussian-splatting
 
-The data is acquired using a ZED stereo camera or an ipad pro with 4k resolution. Then it is processed through saveral stages including frame extraction, camera pose estimation, model training and visualization.
-This approach enables high-quality novel view synthesis with real-time rendering performance.
-
+The data is captured using a ZED stereo camera or an iPad Pro with 4K resolution.
+It is then processed through several stages, including frame extraction, camera pose estimation, model training, and visualization.
+This pipeline enables high-quality novel view synthesis with real-time rendering performance.
 ---
 
 ## Project Pipeline
@@ -151,10 +151,10 @@ Two acquisition strategies were used depending on the target:
 
 ****Ipad acquisition****
 
-If you're using an Ipad we recomend the same acquisition strategues used with the Zed Stereo camera.
-During acquisition, the Ipad was moved smoothly around the target scene while maintaining stable motion and good visibility of the scene structure.
+If an iPad is used, we recommend following the same acquisition strategy adopted for the ZED stereo camera.  
+During capture, the device should be moved smoothly around the scene while maintaining stable motion and ensuring good visibility of the scene geometry.
 
-The video can be exported in .MOV type and then it must be converted into individual frames as the next step will teach.
+The recorded video can be exported in .MOV format and must then be converted into individual frames, as described in the next section.
 
 
 ---
