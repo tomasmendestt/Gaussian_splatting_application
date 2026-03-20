@@ -156,6 +156,13 @@ During capture, the device should be moved smoothly around the scene while maint
 
 The recorded video can be exported in .MOV format and must then be converted into individual frames, as described in the next section.
 
+<p align="center">
+  <img src="assets/obj1.gif" width="45%" />
+  <img src="assets/scene.gif" width="45%" />
+</p>
+<p align="center">
+  Ipad Pro acquisitions examples.
+</p>
 
 ---
 
