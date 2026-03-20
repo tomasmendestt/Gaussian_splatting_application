@@ -185,7 +185,7 @@ python extract_frames.py -i scene_name/data/crane/input_video.mp4 --fps 3
 
 **Note: You should adjust fps in order to have arround 200-300 frames per video**
 
-All images will then be saved inside 'scene_name/data/crane'
+All images should then be saved inside 'scene_name/data/crane'
 
 Recommended:
  - Images must be captured with camera motion (not rotating the object with a fixed camera)
