@@ -155,6 +155,8 @@ If you're using an Ipad we recomend the same acquisition strategues used with th
 During acquisition, the Ipad was moved smoothly around the target scene while maintaining stable motion and good visibility of the scene structure.
 
 The video can be exported in .MOV type and then it must be converted into individual frames as the next step will teach.
+
+
 ---
 
 
