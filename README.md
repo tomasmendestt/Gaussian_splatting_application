@@ -159,7 +159,7 @@ The recorded video can be exported in .MOV format and must then be converted int
 
 <p align="center">
   <img src="assets/obj1.gif" width="45%" />
-  <img src="assets/scene.gif" width="45%" />
+  <img src="assets/room1.gif" width="45%" />
 </p>
 <p align="center">
   IPad Pro acquisitions examples.
@@ -301,7 +301,7 @@ The final output consists of a trained Gaussian model that can be rendered inter
 </p>
 
 <p align="center">
-  <img src="assets/model1.gif" width="45%" />
+  <img src="assets/resobj1.gif" width="45%" />
   <img src="assets/model2.gif" width="45%" />
 </p>
 <p align="center">
