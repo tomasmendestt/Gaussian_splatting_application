@@ -149,7 +149,7 @@ Two acquisition strategies were used depending on the target:
   ZED acquisitions examples.
 </p>
 
-**** Ipad acquisition ****
+****Ipad acquisition****
 
 If you're using an Ipad we recomend the same acquisition strategues used with the Zed Stereo camera.
 During acquisition, the Ipad was moved smoothly around the target scene while maintaining stable motion and good visibility of the scene structure.
