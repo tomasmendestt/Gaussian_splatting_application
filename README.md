@@ -12,6 +12,7 @@ Repository: https://github.com/graphdeco-inria/gaussian-splatting
 The data is captured using a ZED stereo camera or an iPad Pro with 4K resolution.
 It is then processed through several stages, including frame extraction, camera pose estimation, model training, and visualization.
 This pipeline enables high-quality novel view synthesis with real-time rendering performance.
+
 ---
 
 ## Project Pipeline
