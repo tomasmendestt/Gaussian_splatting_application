@@ -302,7 +302,7 @@ The final output consists of a trained Gaussian model that can be rendered inter
 
 <p align="center">
   <img src="assets/resobj1.gif" width="45%" />
-  <img src="assets/model2.gif" width="45%" />
+  <img src="assets/resroom1.gif" width="45%" />
 </p>
 <p align="center">
   Gaussian Splatting results using Ipad Pro.
