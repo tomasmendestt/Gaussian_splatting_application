@@ -55,7 +55,7 @@ OR if using an iPad:
 
 ****External Dependencies****
 
-- **COLMAP** – required for Structure-from-Motion (camera pose estimation and sparse reconstruction)
+- **COLMAP 3.8** – required for Structure-from-Motion (camera pose estimation and sparse reconstruction)
 - **PyTorch** – used for training the Gaussian Splatting model
 - **CUDA** – required for GPU acceleration
 
@@ -106,7 +106,6 @@ python -c "import torch; print(torch.__version__)"
 ```
 
 If everything runs without a problem you can install the submodules one by one:
-
 ```bash
 SET DISTUTILS_USE_SDK=1
 pip install ninja
